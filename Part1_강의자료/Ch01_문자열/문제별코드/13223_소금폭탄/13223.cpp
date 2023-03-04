@@ -9,7 +9,7 @@ int main()
 	scanf(" %d:%d:%d", &target_h, &target_m, &target_s);
 
 	int current_sec = current_h * 3600 + current_m * 60 + current_s;
-    int target_sec = target_h * 3600 + target_m * 60 + target_s;
+	int target_sec = target_h * 3600 + target_m * 60 + target_s;
 	
 	int need_sec = target_sec - current_sec;
 	if (need_sec <= 0) need_sec += 24 * 3600;
