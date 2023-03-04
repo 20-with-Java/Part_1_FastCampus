@@ -7,13 +7,13 @@ class Main
         Scanner sc = new Scanner(System.in);
         String doc = sc.nextLine();
         String word = sc.nextLine();
-        int start_index = 0;
+        int startIndex = 0;
         int count = 0;
         while (true) {
-            int find_index = doc.indexOf(word, start_index);
-            if (find_index < 0)
+            int findIndex = doc.indexOf(word, startIndex);
+            if (findIndex < 0)
                 break;
-            start_index = find_index + word.length();
+            startIndex = findIndex + word.length();
             count++;
         }
         System.out.println(count);

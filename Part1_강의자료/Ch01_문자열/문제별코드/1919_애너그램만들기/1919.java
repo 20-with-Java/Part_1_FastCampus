@@ -15,12 +15,12 @@ class Main
         String a = sc.next();
         String b = sc.next();
 
-        int[] count_a = getAlphabetCountArray(a);
-        int[] count_b = getAlphabetCountArray(b);
+        int[] countA = getAlphabetCountArray(a);
+        int[] countB = getAlphabetCountArray(b);
 
         int ans = 0;
         for (int i = 0; i < 26; i++)
-            ans += Math.abs(count_a[i] - count_b[i]);
+            ans += Math.abs(countA[i] - countB[i]);
         System.out.println(ans);
     }
 }
