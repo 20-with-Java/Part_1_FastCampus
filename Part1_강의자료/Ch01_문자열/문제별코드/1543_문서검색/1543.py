@@ -1,3 +1,8 @@
+# doc=input()
+# word=input()
+
+# print(doc.count(word))
+
 doc = input()
 word = input()
 
