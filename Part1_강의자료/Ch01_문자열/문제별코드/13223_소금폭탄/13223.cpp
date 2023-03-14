@@ -5,8 +5,8 @@ int main()
 	int current_h, current_m, current_s;
 	int target_h, target_m, target_s;
 
-	scanf(" %d:%d:%d", &current_h, &current_m, &current_s);
-	scanf(" %d:%d:%d", &target_h, &target_m, &target_s);
+	scanf("%d:%d:%d", &current_h, &current_m, &current_s);
+	scanf("%d:%d:%d", &target_h, &target_m, &target_s);
 
 	int current_sec = current_h * 3600 + current_m * 60 + current_s;
 	int target_sec = target_h * 3600 + target_m * 60 + target_s;

@@ -8,7 +8,7 @@ target_sec = target_h * 3600 + target_m * 60 + target_s
 
 need_sec = target_sec - current_sec
 if need_sec <= 0:
-    need_sec += 24 * 3600
+	need_sec += 24 * 3600
 
 need_h = need_sec // 3600
 need_m = (need_sec % 3600) // 60
