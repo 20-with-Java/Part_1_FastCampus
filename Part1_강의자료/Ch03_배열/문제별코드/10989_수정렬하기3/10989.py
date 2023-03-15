@@ -11,3 +11,4 @@ for i in range(1, 10001):
 	while arr[i] > 0:
 		print(i)
 		arr[i] -= 1
+
