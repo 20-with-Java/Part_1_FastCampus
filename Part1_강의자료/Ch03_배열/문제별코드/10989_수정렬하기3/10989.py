@@ -12,3 +12,4 @@ for i in range(1, 10001):
 		print(i)
 		arr[i] -= 1
 
+
