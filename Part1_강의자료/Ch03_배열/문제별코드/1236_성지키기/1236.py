@@ -18,3 +18,5 @@ for i in range(M):
 		row += 1
 
 print(max(row, col))
+
+

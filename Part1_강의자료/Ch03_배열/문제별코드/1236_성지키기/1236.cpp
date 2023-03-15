@@ -36,3 +36,4 @@ int main()
 	printf("%d\n", max(row, col));
 	return 0;
 }
+
