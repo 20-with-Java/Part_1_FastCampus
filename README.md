@@ -24,10 +24,12 @@
 
 ## 그룹
 
-> BOJ 그룹: https://www.acmicpc.net/group/workbook/16322
+> BOJ 그룹: https://www.acmicpc.net/group/16322
 
-위 그룹의 [문제집](https://www.acmicpc.net/group/workbook/16322)에서 각 챕터별 문제와 연습문제를 확인하실 수 있습니다.
+> 그룹 문제집: https://www.acmicpc.net/group/workbook/16322
 
-가입신청 후 그룹 매니저가 신청을 수락해야 사용이 가능합니다. 가입조건은 따로 없으며 빠르면 당일, 늦어도 며칠 안에 처리할 수 있도록 하겠습니다.
+위 [그룹](https://www.acmicpc.net/group/16322)의 [문제집](https://www.acmicpc.net/group/workbook/16322)에서 각 챕터별 문제와 연습문제를 확인하실 수 있습니다.
+
+그룹에 가입신청 후 그룹 매니저가 신청을 수락해야 사용이 가능합니다. 가입조건은 따로 없으며 빠르면 당일, 늦어도 며칠 안에 처리할 수 있도록 하겠습니다.
 
 너무 오래 수락되지 않거나 그룹 신청이 불가능하다면 마찬가지로 [Issue](https://github.com/Acka1357/codingtest-java-20/issues) 혹은 `Acka1357@gmail.com`으로 메일 주세요.
