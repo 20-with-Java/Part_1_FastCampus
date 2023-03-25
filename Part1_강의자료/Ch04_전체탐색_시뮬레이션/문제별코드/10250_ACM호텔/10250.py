@@ -6,4 +6,4 @@ for _ in range(T):
     floor = (N - 1) % H + 1
     number = (N - 1) // H + 1
 
-    print("{:d}{:02d}".format(floor, number))
+    print(floor * 100 + number)

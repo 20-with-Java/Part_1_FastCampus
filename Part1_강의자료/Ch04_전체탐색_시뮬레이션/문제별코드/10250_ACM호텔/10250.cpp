@@ -9,7 +9,7 @@ int main()
     {
         scanf("%d %d %d", &H, &W, &N);
 
-        int floor = ((N - 1) % H) + 1;
+        int floor = (N - 1) % H + 1;
         int number = (N - 1) / H + 1;
 
         printf("%d%02d\n", floor, number);
