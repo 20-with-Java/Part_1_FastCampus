@@ -28,7 +28,7 @@ int main()
     {
         scanf("%d", &X);
 
-        for(int i = 2; i <= 64; i++)
+        for (int i = 2; i <= 64; i++)
         {
             ans = is_palindrome(X, i);
             if (ans)

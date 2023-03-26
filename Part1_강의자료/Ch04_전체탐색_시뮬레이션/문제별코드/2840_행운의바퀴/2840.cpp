@@ -38,7 +38,7 @@ int main()
         check[ans[i] - 'A'] = 1;
     }
 
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
         printf("%c", ans[(cur_idx + i) % N]);
     printf("\n");
     return 0;

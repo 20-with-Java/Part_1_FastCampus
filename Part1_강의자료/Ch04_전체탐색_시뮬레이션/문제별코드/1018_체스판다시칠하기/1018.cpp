@@ -18,7 +18,7 @@ int count_diff(int row, int col, char *pattern)
 int main()
 {
     scanf("%d %d", &N, &M);
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
         scanf("%s", map[i]);
 
     int ans = N * M;

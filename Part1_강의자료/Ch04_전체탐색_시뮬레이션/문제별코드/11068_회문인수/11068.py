@@ -5,7 +5,7 @@ def is_palindrome(x, base):
         x //= base
 
     for i in range(len(digit) // 2):
-        if digit[i] != digit[len(digit) - i - 1]:
+        if digit[i] != digit[-i - 1]:
             return 0
     return 1
 

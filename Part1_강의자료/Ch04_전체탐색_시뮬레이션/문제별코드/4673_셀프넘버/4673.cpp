@@ -33,7 +33,7 @@ int main()
         }
     }
 
-    for(int i = 1; i <= MAX_NUMBER; i++)
+    for (int i = 1; i <= MAX_NUMBER; i++)
         if (is_selfnum[i])
             printf("%d\n", i);
     return 0;

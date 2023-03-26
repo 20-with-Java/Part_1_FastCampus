@@ -8,7 +8,7 @@ int main()
     scanf("%s %d", N, &B);
 
     int num_dec = 0;
-    for(int i = 0; N[i]; i++)
+    for (int i = 0; N[i]; i++)
     {
         char digit = N[i];
         num_dec *= B;

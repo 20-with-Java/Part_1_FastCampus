@@ -6,8 +6,7 @@ N, B = input().split()
 B = int(B)
 
 num_dec = 0
-for i in range(len(N)):
-    digit = N[i]
+for digit in N:
     num_dec *= B
     if '0' <= digit <= '9':
         num_dec += int(digit)
