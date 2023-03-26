@@ -13,7 +13,7 @@ typedef struct score {
 }score;
 
 set<score> scores;
-int	name[30];
+int name[30];
 int X, N;
 
 int main()
