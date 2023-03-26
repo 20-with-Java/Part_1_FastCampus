@@ -20,7 +20,7 @@ int main()
 {
     int diff, res = 50;
 
-    scanf(" %s %s", A, B);
+    scanf("%s %s", A, B);
     diff = strlen(B) - strlen(A);
     for (int i = 0; i <= diff; ++i)
         res = min(res, get_ans(strlen(A), i));

@@ -10,7 +10,7 @@ typedef struct score {
     bool operator<(const struct score &A) const {
         return (vote > A.vote);
     }
-}   score;
+}score;
 
 set<score> scores;
 int	name[30];
@@ -22,7 +22,7 @@ int main()
     char ch;
 
     memset(name, -1, sizeof(name));
-    scanf(" %d %d", &X, &N);
+    scanf("%d %d", &X, &N);
 
     for (int i = 0; i < N; ++i)
     {

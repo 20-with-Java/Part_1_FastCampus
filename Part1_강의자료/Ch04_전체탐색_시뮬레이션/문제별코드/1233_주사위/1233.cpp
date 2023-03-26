@@ -5,7 +5,7 @@ int S[3], sum[85];
 int main()
 {
     for (int i = 0; i < 3; i++)
-        scanf(" %d", &S[i]);
+        scanf("%d", &S[i]);
     
     for (int i = 1; i <= S[0]; i++)
         for (int j = 1; j <= S[1]; j++)

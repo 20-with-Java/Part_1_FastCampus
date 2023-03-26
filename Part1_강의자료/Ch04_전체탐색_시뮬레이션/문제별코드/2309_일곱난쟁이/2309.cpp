@@ -11,7 +11,7 @@ int main()
 
     for (i = 0; i < 9; ++i)
     {
-        scanf(" %d", &dwarf[i]);
+        scanf("%d", &dwarf[i]);
         sum += dwarf[i];
     }
     sort(dwarf, dwarf + 9);
@@ -40,4 +40,3 @@ int main()
 
     return 0;
 }
-

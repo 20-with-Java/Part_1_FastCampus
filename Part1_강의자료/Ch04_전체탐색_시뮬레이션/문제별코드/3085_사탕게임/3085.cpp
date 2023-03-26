@@ -81,9 +81,9 @@ void swap_candy(int row, int col)
 
 int main()
 {
-    scanf(" %d", &N);
+    scanf("%d", &N);
     for (int i = 0; i < N; i++)
-        scanf(" %s", board[i]);
+        scanf("%s", board[i]);
     
     for (int i = 0; i < N; i++)
     {

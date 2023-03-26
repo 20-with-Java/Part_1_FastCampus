@@ -1,8 +1,10 @@
 #include <stdio.h>
 
+int N;
+
 int main()
 {
-    int N, len = 0, cur;
+    int len = 0, cur;
     
     scanf("%d", &N);
     cur = N;

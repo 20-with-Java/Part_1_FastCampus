@@ -10,7 +10,7 @@ int N, board[12][12];
 int main()
 {
     pair<int, int> cur = make_pair(0, 0);
-    scanf(" %d %s", &N, command);
+    scanf("%d %s", &N, command);
 
     for (int i = 0; i < strlen(command); i++)
     {
