@@ -4,12 +4,13 @@
 
 using namespace std;
 
-char command[255];
-int N, board[12][12];
-
 int main()
 {
+    bool pass_vertical[12][12] = {}, pass_horizontal[12][12] = {};
+    char command[255];
+    int N;
     pair<int, int> cur = make_pair(0, 0);
+
     scanf("%d %s", &N, command);
 
     for (int i = 0; i < strlen(command); i++)
@@ -18,32 +19,32 @@ int main()
         {
             if (cur.first > 0)
             {
-                board[cur.first][cur.second] |= 1;
-                board[--cur.first][cur.second] |= 1;
+                pass_horizontal[cur.first][cur.second] = true;
+                pass_horizontal[--cur.first][cur.second] = true;
             }
         }
         else if (command[i] == 'D')
         {
             if (cur.first < N - 1)
             {
-                board[cur.first][cur.second] |= 1;
-                board[++cur.first][cur.second] |= 1;
+                pass_horizontal[cur.first][cur.second] = true;
+                pass_horizontal[++cur.first][cur.second] = true;
             }
         }
         else if (command[i] == 'L')
         {
             if (cur.second > 0)
             {
-                board[cur.first][cur.second] |= 2;
-                board[cur.first][--cur.second] |= 2;
+                pass_vertical[cur.first][cur.second] = true;
+                pass_vertical[cur.first][--cur.second] = true;
             }
         }
         else if (command[i] == 'R')
         {
             if (cur.second < N - 1)
             {
-                board[cur.first][cur.second] |= 2;
-                board[cur.first][++cur.second] |= 2;
+                pass_vertical[cur.first][cur.second] = true;
+                pass_vertical[cur.first][++cur.second] = true;
             }
         }
     }
@@ -52,13 +53,13 @@ int main()
     {
         for (int j = 0; j < N; j++)
         {
-            if (board[i][j] == 0)
+            if (!pass_vertical[i][j] && !pass_horizontal[i][j])
                 printf(".");
-            else if (board[i][j] == 1)
+            else if (!pass_vertical[i][j] && pass_horizontal[i][j])
                 printf("|");
-            else if (board[i][j] == 2)
+            else if (pass_vertical[i][j] && !pass_horizontal[i][j])
                 printf("-");
-            else if (board[i][j] == 3)
+            else
                 printf("+");
         }
         printf("\n");
