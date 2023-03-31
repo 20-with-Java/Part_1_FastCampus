@@ -1,6 +1,7 @@
-#include <set>
+#include <algorithm>
 #include <stdio.h>
 #include <string.h>
+#include <vector>
 
 using namespace std;
 
@@ -12,17 +13,15 @@ typedef struct score {
     }
 }score;
 
-set<score> scores;
-int name[30];
-int X, N;
-
 int main()
 {
-    int vote;
-    char ch;
+    int name[30], X, N, vote;
 
     memset(name, -1, sizeof(name));
     scanf("%d %d", &X, &N);
+
+    vector<score> scores;
+    char ch;
 
     for (int i = 0; i < N; ++i)
     {
@@ -31,10 +30,11 @@ int main()
         {
             name[ch - 'A'] = 0;
             for (int j = 1; j <= 14; ++j)
-                scores.insert({ vote / j, ch });
+                scores.push_back({ vote / j, ch });
         }
     }
     
+    sort(scores.begin(), scores.end());
     int idx = 0;
 
     if (N != 0)
