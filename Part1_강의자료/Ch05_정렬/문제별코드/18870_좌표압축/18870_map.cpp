@@ -6,16 +6,16 @@
 using namespace std;
 
 int N, arr[1000005], res[1000005];
-map<int, vector<int> > mp;
+map<int, vector<int>> mp;
 
 int main()
 {
     int num;
 
-    scanf(" %d", &N);
+    scanf("%d", &N);
     for (int i = 0; i < N; i++)
     {
-        scanf(" %d", &arr[i]);
+        scanf("%d", &arr[i]);
         mp[arr[i]].push_back(i);
     }
     
@@ -24,7 +24,7 @@ int main()
     {
         for (auto & v : it->second)
             res[v] = i;
-        ++i;
+        i++;
     }
 
     for (int i = 0; i < N; i++)
