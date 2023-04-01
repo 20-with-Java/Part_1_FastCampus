@@ -5,8 +5,6 @@
 
 using namespace std;
 
-int N;
-vector<string> vec;
 
 int cmp(const string &a, const string &b)
 {
@@ -16,6 +14,8 @@ int cmp(const string &a, const string &b)
 int main()
 {
     char str[55];
+    int N;
+    vector<string> vec;
 
     scanf("%d", &N);
     for (int i = 0; i < N; i++)

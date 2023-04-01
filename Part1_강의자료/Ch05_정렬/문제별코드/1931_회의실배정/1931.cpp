@@ -1,17 +1,14 @@
 #include <algorithm>
 #include <stdio.h>
+#include <vector>
 
 using namespace std;
 
-typedef long long ll;
-
 typedef struct {
-    ll start;
-    ll end;
+    long long start;
+    long long end;
 } meeting;
 
-int N;
-meeting meetings[100005];
 
 bool cmp(meeting a, meeting b) 
 { 
@@ -20,13 +17,17 @@ bool cmp(meeting a, meeting b)
 
 int main()
 {
+    int N;
+    vector<meeting> meetings;
+    
     scanf("%d", &N);
+    meetings.resize(N);
 
     for (int i = 0; i < N; i++)
         scanf("%lld %lld", &meetings[i].start, &meetings[i].end);
-    sort(meetings, meetings + N, cmp);
+    sort(meetings.begin(), meetings.end(), cmp);
 
-    ll end_time = 0, res = 0;
+    long long end_time = 0, res = 0;
     for (int i = 0; i < N; i++)
     {
         if (end_time <= meetings[i].start) 
@@ -36,6 +37,6 @@ int main()
         }
     }
 
-    printf("%lld\n", res);
+    printf("%long longd\n", res);
     return 0;
 }

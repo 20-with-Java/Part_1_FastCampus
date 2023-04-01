@@ -7,12 +7,12 @@
 
 using namespace std;
 
-int N;
-set<string, greater<string> > st;
 
 int main()
 {
     char name[6], log[6];
+    int N;
+    set<string, greater<string>> st;
 
     scanf("%d", &N);
     for (int i = 0; i < N; i++)

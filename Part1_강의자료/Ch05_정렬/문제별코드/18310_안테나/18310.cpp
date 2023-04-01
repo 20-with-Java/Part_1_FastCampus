@@ -4,12 +4,12 @@
 
 using namespace std;
 
-int N;
-vector<long long> house;
 
 int main()
 {
+    int N;
     long long h;
+    vector<long long> house;
 
     scanf("%d", &N);
     for (int i = 0; i < N; i++)

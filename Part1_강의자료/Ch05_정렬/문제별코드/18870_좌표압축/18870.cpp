@@ -9,9 +9,6 @@ typedef struct {
     int idx;
 } coord;
 
-coord arr[1000005];
-int N, ans[1000005];
-
 bool cmp(coord a, coord b) 
 {
     return a.num < b.num;
@@ -19,15 +16,20 @@ bool cmp(coord a, coord b)
 
 int main()
 {
+    int N;
+    vector<int> ans;
+    vector<coord> arr;
     scanf("%d", &N);
+    ans.resize(N);
+    arr.resize(N);
 
-    arr[N].num = MIN;
     for (int i = 0; i < N; i++)
     {
         scanf("%d", &arr[i].num);
         arr[i].idx = i;
     }
-    sort(arr, arr + N, cmp);
+    sort(arr.begin(), arr.end(), cmp);
+    arr.push_back({ MIN, 0 });
     
     int idx = 0;
     for (int i = 0; i < N; i++)
