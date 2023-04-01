@@ -17,10 +17,10 @@ int main()
 {
     char str[55];
 
-    scanf(" %d", &N);
-    for (int i = 0; i < N; ++i)
+    scanf("%d", &N);
+    for (int i = 0; i < N; i++)
     {
-        scanf(" %s", str);
+        scanf("%s", str);
         vec.push_back(str);
     }
 
