@@ -14,10 +14,10 @@ int main()
 {
     char name[6], log[6];
 
-    scanf(" %d", &N);
-    for (int i = 0; i < N; ++i)
+    scanf("%d", &N);
+    for (int i = 0; i < N; i++)
     {
-        scanf(" %s %s", name, log);
+        scanf("%s %s", name, log);
         if (strcmp(log, "enter") == 0)
             st.insert(name);
         else
@@ -28,4 +28,3 @@ int main()
         printf("%s\n", it.c_str());
     return 0;
 }
-
