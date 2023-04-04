@@ -10,12 +10,12 @@ int main()
 
     scanf("%d", &N);
     v.resize(N);
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
         scanf("%d", &v[i]);
 
     sort(v.begin(), v.end());
 
-    for(int i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
         printf("%d\n", v[i]);
     return 0;
 }
