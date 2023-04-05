@@ -9,7 +9,6 @@ typedef struct {
     long long end;
 } meeting;
 
-
 bool cmp(meeting a, meeting b) 
 { 
     return a.end == b.end ? a.start < b.start : a.end < b.end;
@@ -37,6 +36,6 @@ int main()
         }
     }
 
-    printf("%long longd\n", res);
+    printf("%lld\n", res);
     return 0;
 }
