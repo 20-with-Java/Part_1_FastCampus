@@ -5,8 +5,8 @@
 using namespace std;
 
 typedef struct {
-    long long start;
-    long long end;
+    int start;
+    int end;
 } meeting;
 
 bool cmp(meeting a, meeting b) 
@@ -23,10 +23,10 @@ int main()
     meetings.resize(N);
 
     for (int i = 0; i < N; i++)
-        scanf("%lld %lld", &meetings[i].start, &meetings[i].end);
+        scanf("%d %d", &meetings[i].start, &meetings[i].end);
     sort(meetings.begin(), meetings.end(), cmp);
 
-    long long end_time = 0, res = 0;
+    int end_time = 0, res = 0;
     for (int i = 0; i < N; i++)
     {
         if (end_time <= meetings[i].start) 
@@ -36,6 +36,6 @@ int main()
         }
     }
 
-    printf("%lld\n", res);
+    printf("%d\n", res);
     return 0;
 }
