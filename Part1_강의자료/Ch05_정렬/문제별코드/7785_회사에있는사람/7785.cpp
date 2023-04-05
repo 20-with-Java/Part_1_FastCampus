@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 int main()
 {
     char name[6], log[6];
