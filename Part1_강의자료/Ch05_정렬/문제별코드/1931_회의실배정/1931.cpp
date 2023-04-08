@@ -19,7 +19,7 @@ int main()
     for (int i = 0; i < N; i++)
         scanf("%d %d", &meetings[i].start, &meetings[i].end);
         
-    sort(meetings.begin(), meetings.end(), [](const Meeting &a, const Meeting &b) {
+    sort(meetings.begin(), meetings.end(), [](const Meeting& a, const Meeting& b) {
         return a.end == b.end ? a.start < b.start : a.end < b.end;
     });
 
