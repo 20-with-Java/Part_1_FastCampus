@@ -7,17 +7,13 @@ using namespace std;
 int main()
 {
     int N;
-    long long h;
-    vector<long long> house;
 
     scanf("%d", &N);
+    vector<int> house(N);
     for (int i = 0; i < N; i++)
-    {
-        scanf("%lld", &h);
-        house.push_back(h);
-    }
+        scanf("%d", &house[i]);
     sort(house.begin(), house.end());
-    printf("%lld\n", house[(N - 1) / 2]);
-
+    
+    printf("%d\n", house[(N - 1) / 2]);
     return 0;
 }
