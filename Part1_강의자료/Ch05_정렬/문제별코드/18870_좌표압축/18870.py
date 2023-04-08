@@ -3,8 +3,7 @@ input = sys.stdin.readline
 
 N = int(input())
 li = list(map(int, input().split()))
-st = sorted(list(set(li)))
-dic = {st[i] : i for i in range(len(st))}
+st = sorted(set(li))
+dic = {num: i for i, num in enumerate(st)}
 
-for i in li:
-    print(dic[i], end=' ')
+print(' '.join([str(dic[num]) for num in li]))

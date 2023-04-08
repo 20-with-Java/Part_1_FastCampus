@@ -4,31 +4,29 @@
 
 using namespace std;
 
-typedef struct {
+struct Coord {
     int num;
     int idx;
-} coord;
-
-bool cmp(coord a, coord b) 
-{
-    return a.num < b.num;
-}
+};
 
 int main()
 {
     int N;
-    vector<int> ans;
-    vector<coord> arr;
+    
     scanf("%d", &N);
-    ans.resize(N);
-    arr.resize(N);
+    vector<int> ans(N);
+    vector<Coord> arr(N);
 
     for (int i = 0; i < N; i++)
     {
         scanf("%d", &arr[i].num);
         arr[i].idx = i;
     }
-    sort(arr.begin(), arr.end(), cmp);
+
+    sort(arr.begin(), arr.end(), [](const Coord& a, const Coord& b) {
+        return a.num < b.num;
+    });
+
     arr.push_back({ MIN, 0 });
     
     int idx = 0;

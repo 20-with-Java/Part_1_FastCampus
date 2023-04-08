@@ -5,14 +5,14 @@
 
 using namespace std;
 
-int N, arr[1000005], res[1000005];
-map<int, vector<int>> mp;
-
 int main()
 {
-    int num;
+    int N, num;
+    map<int, vector<int>> mp;
 
     scanf("%d", &N);
+    vector<int> arr(N), res(N);
+
     for (int i = 0; i < N; i++)
     {
         scanf("%d", &arr[i]);
@@ -27,8 +27,8 @@ int main()
         i++;
     }
 
-    for (int i = 0; i < N; i++)
-        printf("%d ", res[i]);
+    for (auto & it : res)
+        printf("%d ", it);
     printf("\n");
     return 0;
 }
