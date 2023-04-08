@@ -5,11 +5,6 @@
 
 using namespace std;
 
-int cmp(const string &a, const string &b)
-{
-    return (a.length() == b.length() ? a < b : a.length() < b.length());
-}
-
 int main()
 {
     char str[55];
@@ -23,7 +18,9 @@ int main()
         vec[i] = str;
     }
 
-    sort(vec.begin(), vec.end(), cmp);
+    sort(vec.begin(), vec.end(), [](const string& a, const string& b){
+        return (a.length() == b.length() ? a < b : a.length() < b.length());
+    });
 
     printf("%s\n", vec[0].c_str());
     for (int i = 1; i < vec.size(); i++)
