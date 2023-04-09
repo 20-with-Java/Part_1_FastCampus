@@ -26,6 +26,5 @@ int main()
         printf("%d ", arr[i] + sum);
     }
     printf("\n");
-    
     return 0;
 }

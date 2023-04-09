@@ -2,12 +2,12 @@
 #include <vector>
 using namespace std;
 
-int main() {
+int main() 
+{
     int N, M;
-    vector<vector<int>> acc;
-
     scanf("%d %d", &N, &M);
-    acc.resize(N + 1);
+
+    vector<vector<int>> acc(N + 1);
     for (int i = 0; i <= N; i++)
         acc[i].resize(N + 1);
 
@@ -21,8 +21,7 @@ int main() {
         }
     }
 
-    int x1, x2, y1, y2;
-    int sum;
+    int x1, x2, y1, y2, sum;
     while (M--)
     {
         scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
