@@ -15,7 +15,6 @@ for i in range(1, N):
         cur_cnt = 0
     cur_cnt += 1
     if max_cnt < cur_cnt or (max_cnt == cur_cnt and titles[i] < max_title):
-        max_cnt = cur_cnt
-        max_title = titles[i]
+        max_cnt, max_title = cur_cnt, titles[i]
 
 print(max_title)

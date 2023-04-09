@@ -3,21 +3,21 @@
 #include <algorithm>
 using namespace std;
 
-struct message {
+struct Message {
     int num;
     int idx;
-    bool operator<(const message &o) const{
+    bool operator<(const Message &o) const{
         if (num != o.num)
             return num < o.num;
         return idx < o.idx;
     }
 };
 
-struct frequency {
+struct Frequency {
     int num;
     int count;
     int first_idx;
-    bool operator<(const frequency &o) const{
+    bool operator<(const Frequency &o) const{
         if (count != o.count)
             return count > o.count;
         return first_idx < o.first_idx;
@@ -27,8 +27,8 @@ struct frequency {
 int main()
 {
     int N, C;
-    vector<message> messages;
-    vector<frequency> frequencies;
+    vector<Message> messages;
+    vector<Frequency> frequencies;
     int x;
 
     scanf("%d %d", &N, &C);

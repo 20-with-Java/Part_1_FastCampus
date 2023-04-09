@@ -5,10 +5,10 @@
 #include <algorithm>
 using namespace std;
 
-struct serial {
+struct Serial {
     string str;
     int sum;
-    bool operator<(const serial &o) const{
+    bool operator<(const Serial &o) const{
         if (str.length() != o.str.length())
             return str.length() < o.str.length();
         if (sum != o.sum)
@@ -20,7 +20,7 @@ struct serial {
 int main()
 {
     int N;
-    vector<serial> serials;
+    vector<Serial> serials;
     char str[51];
 
     scanf("%d", &N);

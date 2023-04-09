@@ -4,11 +4,11 @@
 #include <algorithm>
 using namespace std;
 
-struct member {
+struct Member {
     int age;
     string name;
     int idx;
-    bool operator<(const member &o) const{
+    bool operator<(const Member &o) const{
         if (age != o.age)
             return age < o.age;
         return idx < o.idx;
@@ -18,7 +18,7 @@ struct member {
 int main()
 {
     int N;
-    vector<member> members;
+    vector<Member> members;
     int age;
     char name[101];
 
