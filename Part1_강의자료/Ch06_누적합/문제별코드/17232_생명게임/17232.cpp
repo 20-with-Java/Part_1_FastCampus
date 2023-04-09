@@ -1,5 +1,4 @@
 #include <algorithm>
-#include <queue>
 #include <stdio.h>
 using namespace std;
 
@@ -16,7 +15,7 @@ void set_prefix_sum(int N, int M, int acc[105][105], char board[105][105])
     }
 }
 
-int get_range_sum(int K, int row, int col, int alive, int acc[105][105])
+int get_range_sum(int N, int M, int K, int row, int col, int alive, int acc[105][105])
 {
     int left = max(0, col - K - 1);
     int right = min(M, col + K);
@@ -27,37 +26,16 @@ int get_range_sum(int K, int row, int col, int alive, int acc[105][105])
         - acc[up][right] + acc[up][left] - alive;
 }
 
-void make_new_board(char board[105][105], queue<pair<int, int>> &born, queue<pair<int, int>> &died)
-{
-    pair<int, int> cur;
-
-    while (!born.empty())
-    {
-        cur = born.front();
-        born.pop();
-        board[cur.first][cur.second] = '*';
-    }
-    while (!died.empty())
-    {
-        cur = died.front();
-        died.pop();
-        board[cur.first][cur.second] = '.';
-    }
-}
-
 int main()
 {
     char board[105][105];
     int N, M, T, K, A, B, acc[105][105];
-    queue<pair<int, int>> born, died;
 
     scanf("%d %d %d %d %d %d", &N, &M, &T, &K, &A, &B);
     for (int i = 1; i <= N; i++)
-    {
-        getchar();
         for (int j = 1; j <= M; j++)
-            scanf("%c", &board[i][j]);
-    }
+            scanf(" %c", &board[i][j]);
+    
     while (T--)
     {
         set_prefix_sum(N, M, acc, board);
@@ -68,22 +46,20 @@ int main()
                 int near_alive;
                 if (board[i][j] == '*')
                 {
-                    near_alive = get_range_sum(K, i, j, 1, acc);
+                    near_alive = get_range_sum(N, M, K, i, j, 1, acc);
                     if (near_alive < A || B < near_alive)
-                        board[i][j] = '*';
-                        //died.push(make_pair(i, j));
+                        board[i][j] = '.';
                 }
                 else
                 {
-                    near_alive = get_range_sum(K, i, j, 0, acc);
+                    near_alive = get_range_sum(N, M, K, i, j, 0, acc);
                     if (A < near_alive && near_alive <= B)
-                        board[i][j] = '.';
-                        //born.push(make_pair(i, j));
+                        board[i][j] = '*';
                 }
             }
         }
-        //make_new_board(board, born, died);
     }
+    
     for (int i = 1; i <= N; i++)
     {
         for (int j = 1; j <= M; j++)
