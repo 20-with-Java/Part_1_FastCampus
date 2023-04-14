@@ -17,6 +17,7 @@ int main()
     }
 
     int M, l = 1, r = max_budget, res = -1;
+    // r = *max_element(budgets.begin(), budgets.end());
     scanf("%d", &M);
     while (l <= r)
     {
