@@ -9,5 +9,6 @@
 | Chapter03. 배열 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch03_%EB%B0%B0%EC%97%B4) | 4 | 4 |
 | Chapter04. 전체 탐색 / 시뮬레이션 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch04_%EC%A0%84%EC%B2%B4%ED%83%90%EC%83%89_%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98) | 9 | 16 |
 | Chapter05. 정렬 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch05_%EC%A0%95%EB%A0%AC) | 8 | 10 |
-| Chapter06. 누적합 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch06_%EB%88%84%EC%A0%81%ED%95%A9) | 6 | 6 |
+| Chapter06. 누적합 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch06_%EB%88%84%EC%A0%81%ED%95%A9) | 5 | 5 |
 | Chapter07. 이분 탐색 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch07_%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89) | 10 | 14 |
+| Chapter08. 투 포인터 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch08_%ED%88%AC%ED%8F%AC%EC%9D%B8%ED%84%B0) | 10 | 14 |
