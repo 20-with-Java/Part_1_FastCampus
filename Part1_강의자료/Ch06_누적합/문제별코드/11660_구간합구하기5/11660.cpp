@@ -7,9 +7,7 @@ int main()
     int N, M;
     scanf("%d %d", &N, &M);
 
-    vector<vector<int>> acc(N + 1);
-    for (int i = 0; i <= N; i++)
-        acc[i].resize(N + 1);
+    vector<vector<int>> acc(N + 1, vector<int>(N + 1));
 
     int num;
     for (int i = 1; i <= N; i++)
