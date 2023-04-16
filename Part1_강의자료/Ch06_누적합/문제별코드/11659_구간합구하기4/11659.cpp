@@ -8,7 +8,7 @@ int main()
 
     scanf("%d %d", &N, &M);
     vector<int> arr(N + 1);
-    for(int i = 1; i <= N; i++)
+    for (int i = 1; i <= N; i++)
         scanf("%d", &arr[i]);
 
     vector<int> acc(N + 1, 0);
