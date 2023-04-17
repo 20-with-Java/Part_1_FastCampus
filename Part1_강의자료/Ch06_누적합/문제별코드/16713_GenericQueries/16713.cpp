@@ -11,7 +11,7 @@ int main()
     for (int i = 1; i <= N; i++)
         scanf("%d", &arr[i]);
 
-    vector<int> acc(N + 1, 0);
+    vector<int> acc(N + 1);
     for (int i = 1; i <= N; i++)
         acc[i] = acc[i - 1] ^ arr[i];
 
