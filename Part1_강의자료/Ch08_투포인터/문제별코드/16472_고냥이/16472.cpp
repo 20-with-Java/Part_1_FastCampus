@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-int get_unique_alphabet_count(int * alphabet_count)
+int get_unique_alphabet_count(int *alphabet_count)
 {
     int unique_alphabet_count = 0;
     for (int i = 0; i < 26; i++)
