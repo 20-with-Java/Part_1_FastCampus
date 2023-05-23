@@ -12,13 +12,13 @@ for _ in range(N):
 
 sorted_buckets = sorted(buckets, key=lambda bucket: bucket.x)
 
-next = 0
+next_idx = 0
 max_sum = 0
 cur_sum = 0
 for i in range(N):
-    while next < N and sorted_buckets[next].x - sorted_buckets[i].x <= 2 * K:
-        cur_sum += sorted_buckets[next].g
-        next += 1
+    while next_idx < N and sorted_buckets[next_idx].x - sorted_buckets[i].x <= 2 * K:
+        cur_sum += sorted_buckets[next_idx].g
+        next_idx += 1
     max_sum = max(max_sum, cur_sum)
     cur_sum -= sorted_buckets[i].g
 

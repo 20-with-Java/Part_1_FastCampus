@@ -5,19 +5,19 @@ N = int(input())
 nyang = input()
 
 alphabet_count = [0] * 26
-next = 0
+next_idx = 0
 max_length = 0
 
 for i in range(len(nyang)):
-    while next < len(nyang):
-        alphabet_count[ord(nyang[next]) - ord('a')] += 1
-        next += 1
+    while next_idx < len(nyang):
+        alphabet_count[ord(nyang[next_idx]) - ord('a')] += 1
+        next_idx += 1
         if get_unique_alphabet_count(alphabet_count) > N:
-            next -= 1
-            alphabet_count[ord(nyang[next]) - ord('a')] -= 1
+            next_idx -= 1
+            alphabet_count[ord(nyang[next_idx]) - ord('a')] -= 1
             break
     
-    max_length = max(max_length, next - i)
+    max_length = max(max_length, next_idx - i)
     alphabet_count[ord(nyang[i]) - ord('a')] -= 1
 
 print(max_length)

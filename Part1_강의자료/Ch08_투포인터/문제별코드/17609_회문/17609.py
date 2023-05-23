@@ -1,20 +1,15 @@
-def is_palindrome(str, l, r):
-    while l <= r:
-        if str[l] != str[r]:
-            return False
-        l += 1
-        r -= 1
-    return True
+def is_palindrome(s):
+    return s == s[::-1]
 
 T = int(input())
 for _ in range(T):
-    str = input()
+    s = input()
 
     ans = 0
-    l, r = 0, len(str) - 1
+    l, r = 0, len(s) - 1
     while l <= r:
-        if str[l] != str[r]:
-            if is_palindrome(str, l + 1, r) or is_palindrome(str, l, r - 1):
+        if s[l] != s[r]:
+            if is_palindrome(s[l + 1:r + 1]) or is_palindrome(s[l:r]):
                 ans = 1
             else:
                 ans = 2
