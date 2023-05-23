@@ -6,7 +6,7 @@ class Bucket:
 N, K = map(int, input().split())
 
 buckets = []
-for i in range(N):
+for _ in range(N):
     g, x = map(int, input().split())
     buckets.append(Bucket(g, x))
 
