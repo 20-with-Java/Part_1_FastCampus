@@ -1,9 +1,5 @@
 def get_unique_alphabet_count(alphabet_count):
-    unique_alphabet_count = 0
-    for count in alphabet_count:
-        if count > 0:
-            unique_alphabet_count += 1
-    return unique_alphabet_count
+    return sum(1 for count in alphabet_count if count > 0)
 
 N = int(input())
 nyang = input()
