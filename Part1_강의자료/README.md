@@ -1,5 +1,4 @@
-# Part#1
-
+# Part 1. 구현과 기초 테크닉
 
 |챕터 명|링크|영상 문제 수|총 문제 수|
 |---|:---:|:---:|:---:|
@@ -12,3 +11,6 @@
 | Chapter06. 누적합 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch06_%EB%88%84%EC%A0%81%ED%95%A9) | 5 | 5 |
 | Chapter07. 이분 탐색 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch07_%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89) | 10 | 14 |
 | Chapter08. 투 포인터 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch08_%ED%88%AC%ED%8F%AC%EC%9D%B8%ED%84%B0) | 10 | 14 |
+| Chapter09. 리스트 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Ch09_%EB%A6%AC%EC%8A%A4%ED%8A%B8) | 2 | 2 |
+| Part1 연습문제 풀이 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Part1_%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C_%ED%92%80%EC%9D%B4) | - | 11 |
+| Part1 쪽지시험 | [링크](https://github.com/Acka1357/codingtest-java-20/tree/main/Part1_%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/Part1_%EC%AA%BD%EC%A7%80%EC%8B%9C%ED%97%98) | 5 | 5
