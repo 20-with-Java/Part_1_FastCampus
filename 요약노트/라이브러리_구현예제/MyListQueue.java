@@ -35,10 +35,14 @@ public class MyListQueue<E> {
     }
 
     public E getFront() {
+        if (size == 0)
+            throw new NoSuchElementException("Queue is empty.");
         return frontNode.item;
     }
 
     public E getRear() {
+        if (size == 0)
+            throw new NoSuchElementException("Queue is empty.");
         return rearNode.item;
     }
 
