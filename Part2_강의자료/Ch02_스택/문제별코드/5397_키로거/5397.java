@@ -15,11 +15,11 @@ class Main
                 }
                 else if (cmd == '<') {
                     if (!beforCursor.isEmpty())
-                        afterCursor.offerFirst(beforCursor.pollLast());
+                        afterCursor.offerLast(beforCursor.pollLast());
                 }
                 else if (cmd == '>') {
                     if (!afterCursor.isEmpty())
-                        beforCursor.offerLast(afterCursor.pollFirst());
+                        beforCursor.offerLast(afterCursor.pollLast());
                 }
                 else {
                     beforCursor.offerLast(cmd);
@@ -28,7 +28,7 @@ class Main
 
             StringBuilder sb = new StringBuilder();
             while (!beforCursor.isEmpty()) sb.append(beforCursor.pollFirst());
-            while (!afterCursor.isEmpty()) sb.append(afterCursor.pollFirst());
+            while (!afterCursor.isEmpty()) sb.append(afterCursor.pollLast());
             System.out.println(sb);
         }
     }
